@@ -15,7 +15,7 @@ Press mouse button to change rotation of the square and enable or disable color
 according to color setting, w/W or e/E or r/R.
 */
 
-
+/* @pjs preload="logo.png"; */
 
 int SIZE;
 int NO;
@@ -43,7 +43,6 @@ void startlogo() {
  // background(#255, #255, #255);
   COLOR = 1;
   squares(NO);
-  printls("NO", NO);
   rect(238, 291, 244, 139);
   image(logo, 240, 293);  
 }
