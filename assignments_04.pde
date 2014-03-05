@@ -24,7 +24,7 @@ int SIZEX;
 int COLOR; 
 PImage logo;
 
-/* @pjs preload="logo.png"; */
+
 
 void setup(){
  size(720, 720);
@@ -100,16 +100,7 @@ void draw(){
 void mousePressed() {
   int mx=int(mouseX/SIZEX);
   int my=int(mouseY/SIZEX);
-  println("mouseX " + mouseX);
-  println("mouseY " + mouseY);
-  println("SIZEX " + SIZEX);
-  println("mx " + mx);
-  println("my " + my);
-  
 
-  println("ROTATE[mx][my]");
-  
-  println("AHOJ");
   if (ROTATE[mx][my] == 0.1) {
     ROTATE[mx][my] = 0.9;
   } else {
